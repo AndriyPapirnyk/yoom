@@ -13,7 +13,16 @@ const Navbar = () => {
       </Link>
       <div className='flex-between gap-5'>
           <SignedIn>
-              <UserButton />
+              <UserButton appearance={{
+              elements: {
+                userButtonAvatarBox: {
+                  width: '50px',
+                  height: '50px',
+                  borderRadius: '50%',
+                  textTransform: "none",
+                },
+              },
+            }}/>
           </SignedIn>
 
 
